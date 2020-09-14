@@ -36,6 +36,7 @@ export class DashboardComponent implements OnInit {
       backgroundColor: ['#ff0f3c', '#1bd4c3',  '#ffa93e','#ffb50f'],
     },
   ];
+  users: any;
 
   constructor(private service: RestCalls) {
     monkeyPatchChartJsTooltip();
@@ -63,6 +64,7 @@ export class DashboardComponent implements OnInit {
           console.log(chartData);
           this.pieChartData = chartData;
         }
+        this.users=res
     }, err => {
       console.error(err)
     })
