@@ -1,0 +1,29 @@
+# VS-CODE
+*.vscode
+
+# npm i
+node_modules
+package-lock.json
+
+#npm run bild
+dist
+
+# logger
+app/logs
+
+# npm run coverage
+*.nyc_output
+coverage
+
+# Robot 
+output.json
+liveTest
+
+# Eslint
+report.json
+
+# Development Enviornment Exports
+dev-env.cmd
+dev.env.cmd
+dev-env.sh
+dev.env.cmd
